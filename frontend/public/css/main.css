@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;1,400&family=Work+Sans:ital@1&display=swap');
+
+:root {
+    --orange: #faad37;
+    --gray: #d6d6d6;
+    --gray-dark: #b5b5b5;
+    --black-blur: #202020;
+    --shadow-default: 4px 4px 5px rgba(0, 0, 0, 0.75)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.interface {
+    width: 100%;
+}
+
+.interface .page header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 0 0 50px 50px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
