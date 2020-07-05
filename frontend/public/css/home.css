@@ -64,6 +64,8 @@ main #search-tools #search-bar input {
 main #place-cards {
     margin: 40px 30px 0 45px;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 footer {

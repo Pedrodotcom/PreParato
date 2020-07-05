@@ -53,3 +53,15 @@ main .main-perfil-header .greetings h2 {
 main .costumer-board img:hover {
     cursor: pointer;
 }
+
+/*Dashboard*/
+
+main .owner-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .owner-board:hover{
+    cursor: pointer;
+}

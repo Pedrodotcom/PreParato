@@ -26,7 +26,7 @@
 
 #modal1 .modal-content {
     background: #fff url('../../assets/images/humaaans-drawn.svg') no-repeat;
-    background-position: bottom -160px right -60px;
+    background-position: bottom -180px right -60px;
 }
 
 .hidden {
@@ -37,8 +37,8 @@
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    padding: 70px 100px;
-    margin: 0 90px;
+    padding: 70px;
+    margin: 0 130px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     border-radius: 16px;
@@ -62,12 +62,12 @@
 }
 
 .modal-content h1 {
-    margin-bottom: 70px;
-    font-size: 60px;
+    margin-bottom: 30px;
+    font-size: 50px;
 }
 
 #modal1 .modal-content p {
-    font-size: 24px;
+    font-size: 18px;
     max-width: 50%;
     margin-bottom: 40px;
 }
@@ -76,16 +76,17 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
 
 #modal2 .modal-content img {
     width: 215px;
     height: 147px;
-    margin-top: -40px;
+    margin-top: -20px;
 }
 
 #modal2 .modal-content p {
-    font-size: 20px;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 

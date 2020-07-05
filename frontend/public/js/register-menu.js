@@ -9,7 +9,6 @@
                 const sizeEvent = event.target;
                     sizeEvent.classList.toggle('selected');
 
-
                 const sizeId = sizeEvent.dataset.id;
                     if(selectedDishSize.indexOf(sizeId) == -1) {
                         selectedDishSize.push(sizeId);
@@ -17,7 +16,6 @@
                     } else {
                         selectedDishSize.splice(selectedDishSize.indexOf(sizeId), 1);
                         console.log(selectedDishSize)
-
                     };
 
                 inputSize.value = selectedDishSize.sort();
@@ -39,33 +37,40 @@
 
         let itemInfo = [];
         const dishName = document.querySelector('[name=dish]');
-            itemInfo.push(dishName.value)
+            itemInfo.push(dishName.value);
         const dishDescription = document.querySelector('[name=dish-description]');
-            itemInfo.push(dishDescription.value)
+            itemInfo.push(dishDescription.value);
+            itemInfo.push(inputSize.value);
 
-            console.log(itemInfo)
+        // TextNode
 
-        let itemTextName = document.createTextNode(`${dishName.value} `);
-        let itemTextDescription = document.createTextNode(` - ${dishDescription.value}`);
+            let itemTextName = document.createTextNode(`${dishName.value} `);
+            let itemTextDescription = document.createTextNode(` - ${dishDescription.value}`);
         
+        // Elements
 
-        let itemName = document.createElement('h2').appendChild(itemTextName);
-        let itemDescription = document.createElement('p').appendChild(itemTextDescription);
-        let removeItem = document.createElement('span');
+            let itemName = document.createElement('h2').appendChild(itemTextName);
+            let itemDescription = document.createElement('p').appendChild(itemTextDescription);
+            let removeItem = document.createElement('span');
 
-        let newItem = document.createElement('li');
-            newItem.appendChild(removeItem);
-            newItem.appendChild(itemName);
-            newItem.appendChild(itemDescription);
+            console.log(dishList)
+            for(item in dishList) {
+                document.querySelector('li span').onclick = event => {
+                    const dishRemoval = event.target
+                    dishList.remove(dishRemoval);
+                }
+            }
 
-        dishList.appendChild(newItem);
+            let newItem = document.createElement('li');
+                newItem.appendChild(removeItem);
+                newItem.appendChild(itemName);
+                newItem.appendChild(itemDescription);
+
+        // Appending to list and pushing to array 
+
+            dishList.appendChild(newItem);
+            listItems.push(itemInfo);
+            console.log(listItems)
 
     }
-
-    console.log(dishList)
-    for(item in dishList) {
-        removeItem.onclick = event => {
-            const dishEvent = event.target
-            console.log(dishEvent)
-        }
-    }
+    
