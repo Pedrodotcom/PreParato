@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrePagato - HOME</title>
+    <title>PreParato - HOME</title>
     <link rel="shortcut icon" href="../assets/images/logo-medium-whitebg.png" type="image/x-icon">
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/home.css">
+    <link rel="stylesheet" href="../public/css/modal.css">
 </head>
 <body>
     <div class="interface">
@@ -18,7 +19,7 @@
                 </figure>
                 <nav>
                     <ul>
-                        <a href="#"><li>Espaço do Proprietário</li></a>
+                        <a href="#"><li id="modal-activator">Espaço do Proprietário</li></a>
                         <a href="#"><li>Fale Conosco</li></a>
                         <li><img src="../assets/images/line.svg"></li>
                         <li><button id="login-btn">Login</button></li>
@@ -62,6 +63,40 @@
                 </div>
             </footer>
         </div>
+
+        <!--Modal-->
+
+        <div class="modal hide">
+            <img id="modal-deactivator" src="../assets/icons/cancel.svg" alt="Fechar">
+            <div id="modal1" class="">
+                <div class="modal-content">
+                    <h1>Bem-vind@!</h1>
+                    <p>Ficamos muito felizes em receber você no nosso espaço dedicado.</p>
+                    <p>Nossa missão é auxiliar-lhe a qualquer hora, especialmente no momento em que estamos vivendo. Por isso, sinta-se a vontade para perguntar o que quiser e também nos dar seu feedback.</p>
+                    <p>Estamos aqui para ajudar!</p>
+                    <div>
+                        <button id="modal-btn1">Continuar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="hidden">
+                <div class="modal-content">
+                    <h1>Como ajudamos?</h1>
+                    <img src="../assets/images/logo-medium-whitebg.png" alt="Logo">
+                    <p>A <strong>PreParato</strong> é uma plataforma que te conecta aos clientes com pedidos recorrentes, repassando o valor adiantado para que você possa reajustar seu fluxo de caixa e otimizar seus custos de forma inteligente.</p>
+                    <p>Nosso objetivo é que seu negócio sofra o menor impacto possível, te ajudando a recuperar o fôlego para uma retomada orgânica e sem bolas de neve.</p>
+                    <p>Nosso plano pode ser adquirido por meio de uma assinatura mensal de apenas:</p>
+                    <p><span>R$ 35,90</span></p>
+                    <p><strong>sem taxas sobre as vendas</strong></p>
+                    <div>
+                        <a href="#"><button id="modal-btn2">Vamos lá</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <script src="../public/js/modal-behavior.js"></script>
 </body>
 </html>
