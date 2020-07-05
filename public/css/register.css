@@ -34,7 +34,7 @@ fieldset {
     }
 
     main #form-general #field-group {
-        margin-bottom: 40px;
+        margin: auto 40px 40px;
     }
 
     main #form-general #field-group fieldset {
@@ -53,7 +53,7 @@ fieldset {
 
     main #form-general #field-group fieldset input {
         width: 100%;
-        margin-top: 10px;
+        margin: 10px 30px auto;
         padding: 15px 20px;
         border: none;
         border-radius: 8px;
