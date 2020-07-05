@@ -43,7 +43,7 @@ fieldset {
 
     main #form-general #field-group fieldset label {
         display: block;
-        margin-top: 15px;
+        margin-top: 30px;
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -54,7 +54,7 @@ fieldset {
     main #form-general #field-group fieldset input {
         width: 100%;
         margin: 10px 30px auto;
-        padding: 15px 20px;
+        padding: 20px 10px;
         border: none;
         border-radius: 8px;
         background: var(--gray);

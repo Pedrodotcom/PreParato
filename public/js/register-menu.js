@@ -28,10 +28,6 @@
     const dishList = document.querySelector('#dish-list');
     let addedDishes = document.querySelectorAll('#dish-list li');
 
-    if(dishList.lenght != 0) {
-        document.querySelector('#list-title').innerHTML = 'Pratos adicionados:';
-    }
-
     document.querySelector('#add-dish').onclick = event => {
         event.preventDefault()
 
@@ -53,14 +49,6 @@
             let itemDescription = document.createElement('p').appendChild(itemTextDescription);
             let removeItem = document.createElement('span');
 
-            console.log(dishList)
-            for(item in dishList) {
-                document.querySelector('li span').onclick = event => {
-                    const dishRemoval = event.target
-                    dishList.remove(dishRemoval);
-                }
-            }
-
             let newItem = document.createElement('li');
                 newItem.appendChild(removeItem);
                 newItem.appendChild(itemName);
@@ -72,5 +60,23 @@
             listItems.push(itemInfo);
             console.log(listItems)
 
+        if(listItems.length != 0) {
+            document.querySelector('#list-title').innerHTML = 'Pratos adicionados:';
+        }
+
+        // Removing from list and from array
+
+        let hope = document.querySelectorAll('#dish-list li');
+        hope.forEach((item, index) => {
+            item.onclick = event => {
+                dishList.removeChild(event.target);
+                listItems.splice(index, 1);
+                console.log(listItems)
+            }
+        });
+
+        dishName.value = '';
+        dishDescription.value = '';
+        dishName.focus();
     }
     

@@ -118,11 +118,12 @@ main section #grid-food-services li:hover {
 
 main section #grid-food-services li img {
     pointer-events: none;
-    z-index: inherit;
+    z-index: 0;
 }
 
 main section #grid-food-services li.selected img {
     filter: invert();
+    z-index: 0;
 }
 
 main #margin-form {
