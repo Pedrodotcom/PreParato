@@ -91,9 +91,17 @@ main #form-services #services-selection ul li {
     padding: 20px 10px;
 }
 
+main #form-services #services-selection ul li:hover {
+    cursor: pointer;
+}
+
 main #form-services #services-selection ul li.selected {
     background: var(--orange);
     border: 5px solid black;
+}
+
+main #form-services #services-selection ul li.selected img {
+    filter: invert();
 }
 
 main #form-services #services-selection ul li span {
@@ -152,6 +160,10 @@ main #form-menu #adding-dish #dish-selection ul li {
     border-radius: 50px;
 }
 
+main #form-menu #adding-dish #dish-selection ul li:hover {
+    cursor: pointer;
+}
+
 main #form-menu #adding-dish #dish-selection ul li.selected {
     color: var(--orange);
 }
@@ -166,6 +178,10 @@ main #form-menu #adding-dish #dish-selection #add-dish {
     align-items: center;
     justify-content: left;
     margin-top: 20px auto 0;
+}
+
+main #form-menu #adding-dish #dish-selection #add-dish:hover {
+    cursor: pointer;
 }
 
 main #form-menu #adding-dish #dish-selection #add-dish span {
@@ -196,4 +212,8 @@ main #form-menu #dishes .list #dish-list li span {
     width: 41px;
     height: 41px;
     margin-right: 15px;
+}
+
+main #form-menu #dishes .list #dish-list li:hover {
+    cursor: pointer;
 }

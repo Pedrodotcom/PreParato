@@ -76,3 +76,7 @@ main .submit-orange-button .submission-btn {
     font-weight: 700;
     font-size: 30px;
 }
+
+main .submit-orange-button .submission-btn:hover {
+    cursor: pointer;
+}

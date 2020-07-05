@@ -112,6 +112,10 @@ main section #grid-food-services li {
     z-index: 25;
 }
 
+main section #grid-food-services li:hover {
+    cursor: pointer;
+}
+
 main section #grid-food-services li img {
     pointer-events: none;
     z-index: inherit;
