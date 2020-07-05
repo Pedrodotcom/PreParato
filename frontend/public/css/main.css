@@ -41,6 +41,13 @@
     padding-left: 40px;
 }
 
+.page main .command {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .interface .page footer.only-logo {
     display: flex;
     align-items: center;
