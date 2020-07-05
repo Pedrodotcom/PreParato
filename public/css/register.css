@@ -94,7 +94,6 @@ main #form-services #services-selection ul li {
 main #form-services #services-selection ul li.selected {
     background: var(--orange);
     border: 5px solid black;
-    filter: invert();
 }
 
 main #form-services #services-selection ul li span {
