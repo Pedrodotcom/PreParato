@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreParato - Cadastro</title>
+    <link rel="shortcut icon" href="../assets/images/logo-medium-whitebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/register.css">
+</head>
+<body>
+    <div class="interface">
+        <div class="page" id="register-menu">
+            <header class="only-namelogo">
+                <figure>
+                    <img src="../assets/images/logo_name.png" alt="PrePagato">
+                    <img src="../assets/images/logo-large-blackbg.png" alt="Logo">
+                </figure>
+            </header>
+            <main>
+                <div class="main-header">
+                    <a href="#"><img src="../assets/icons/back-black_icon.svg" alt=""></a>
+                    <div class="register-title">
+                        <h1>Cadastro</h1>
+                        <h2>Cardápio</h2>
+                    </div>
+                </div>
+                <section id="form-menu">
+                    <form action="#" method="post">
+                        <div id="adding-dish">
+                            <span class="command">Adicione os pratos oferecidos pelo seu restaurante e sua descrição e os tamanhos disponíveis:</span>
+                            <fieldset id="dish-selection">
+                                <input type="text" name="dish" class="dishText" placeholder="Prato do Dia">
+                                <input type="text" name="dish-description" class="dishText" placeholder="Arroz, Feijão, Batata Frita...">
+                                <ul class="grid-dishsize">
+                                    <li data-id="P">
+                                        <span>P</span>
+                                    </li>
+                                    <li data-id="M">
+                                        <span>M</span>
+                                    </li>
+                                    <li data-id="G">
+                                        <span>G</span>
+                                    </li>
+                                </ul>
+                                <input type="hidden" name="dishsize">
+
+                                <button id="add-dish">
+                                    <span></span>
+                                    <h4>
+                                        Adicionar prato
+                                    </h4>
+                                </button>
+                            </fieldset>
+                        </div>
+
+                        <div id="dishes">
+                            <span class="command" id="list-title"></span>
+                            <div class="list">
+                                <ul id="dish-list"></ul>
+                            </div>
+                        </div>
+
+                        <div class="submit-orange-button">
+                            <button class="submission-btn" type="submit">CONFIRMAR</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <footer class="only-logo">
+                <img src="../assets/images/logo-medium-whitebg.png" alt="Logo">
+            </footer>
+        </div>
+    </div>
+
+    <script src="../public/js/register-menu.js"></script>
+</body>
+</html>
