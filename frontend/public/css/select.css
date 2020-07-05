@@ -95,7 +95,7 @@ main #picture-header #dish-name h1 {
     margin-bottom: 20px;
 }
 
-main section .grid-food-services {
+main section #grid-food-services {
     list-style: none;
     background: var(--orange);
     display: grid;
@@ -105,10 +105,20 @@ main section .grid-food-services {
     margin-bottom: 40px;
 }
 
-main section .grid-food-services li {
+main section #grid-food-services li {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 25;
+}
+
+main section #grid-food-services li img {
+    pointer-events: none;
+    z-index: inherit;
+}
+
+main section #grid-food-services li.selected img {
+    filter: invert();
 }
 
 main #margin-form {
