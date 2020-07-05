@@ -21,6 +21,13 @@
     width: 100%;
 }
 
+.interface .page #header-to-payment {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .interface .page header {
     background-color: black;
     position: fixed;
@@ -32,6 +39,7 @@
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    z-index: 100;
 }
 
 .interface .page header.only-namelogo {

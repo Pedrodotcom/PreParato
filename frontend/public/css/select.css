@@ -35,15 +35,16 @@ main .main-header #place-name span {
     margin-right: 20px;
 }
 
-main .grid-food #order{
+main .order{
     display: flex;
     align-items: center;
 }
-main .grid-food #order span#circle {
+main .order span.black-circle {
     background: url('../../assets/icons/black-circle.svg') no-repeat;
     width: 29px;
     height: 29px;
     margin-right: 20px;
+    background-position: center;
 }
 
 main #food-cards {
@@ -55,3 +56,127 @@ main #food-cards {
 
 /*Service's selection*/
 
+#service-selection {
+    margin: auto 0;
+}
+
+#service-selection main {
+    margin: 0 0 20px;
+    padding: auto 0;
+}
+
+#service-selection main form{
+    width: 100%;
+    
+}
+
+main #picture-header {
+    background: url('../../assets/images/prato_principal_pic.png') no-repeat;
+    background-clip: border-box;
+    width: 100%;
+    height: 700px;
+    margin: 0 0 -10px;
+}
+
+main #picture-header .arrow-back {
+    margin: 180px 100px;
+}
+
+main #picture-header #dish-name {
+    font-family: 'Roboto';
+    color: white;
+    margin-left: 100px;
+    margin-top: 60px;
+    letter-spacing: 3px;
+}
+
+main #picture-header #dish-name h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+main section .grid-food-services {
+    list-style: none;
+    background: var(--orange);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+main section .grid-food-services li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #margin-form {
+    margin: 70px;
+}
+
+main #margin-form #days #calendar {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #margin-form #hours #hour {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+main #margin-form #hours #hour p {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+main #margin-form #hours #hour input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: var(--gray);
+}
+
+#payment-card {
+    color: white;
+    background: var(--black-blur);
+    width: 350px;
+    padding: 130px 20px 20px;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    display: fixed;
+    z-index: 50;
+}
+
+#payment-card h2, h4 {
+    font-family: 'Montserat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+#payment-card h2 {
+    font-size: 60px;
+}
+
+#payment-card h3, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#payment-card h5 {
+    font-style: italic;
+}
+
+#payment-card h2, h5 {
+    text-align: end;
+}

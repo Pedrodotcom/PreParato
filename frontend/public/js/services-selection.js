@@ -1,6 +1,6 @@
 let selectedServices = [];
 const services = document.querySelectorAll('.grid-services li');
-const inputServices = document.querySelector('[name=services]');
+const inputServices = document.querySelector('.services');
 
     for(service of services) {
         service.onclick = event => {

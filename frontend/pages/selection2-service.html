@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreParato - Serviço</title>
+    <link rel="shortcut icon" href="../assets/images/logo-medium-whitebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/select.css">
+</head>
+<body>
+    <div class="interface">
+        <div class="page" id="service-selection">
+            <div id="header-to-payment">
+                <header class="only-namelogo">
+                    <figure>
+                        <img src="../assets/images/logo_name.png" alt="PrePagato">
+                        <img src="../assets/images/logo-large-blackbg.png" alt="Logo">
+                    </figure>
+                </header>
+                <div id="payment-card">
+                    <div id="price-per-dish">
+                        <h4>R$ 10,90</h4>
+                        <h5>por prato</h5>
+                    </div>
+                    <img src="../assets/images/horizontal-line.svg" alt="">
+                    <div id="total">
+                        <h3>Total</h3>
+                        <h2>R$39,70</h2>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <div id="picture-header">
+                    <div class="arrow-back">
+                        <a href="#"><img src="../assets/icons/back-white_icon.svg" alt=""></a>
+                    </div>
+                    <div id="dish-name">
+                        <h1>Prato Principal</h1>
+                        <h2>Arroz, Feijão, Brócolis, Linguiça e Pernil</h2>
+                    </div>
+                </div>
+                <form action="#" method="POST">
+                    <section>
+                        <ul class="grid-food-services">
+                            <li data-id="1">
+                                <img src="../assets/icons/takeaway-black-icon.svg" alt="Pegue e Leve">
+                            </li>
+                            <li data-id="2">
+                                <img src="../assets/icons/delivery-black_icon.svg" alt="Delivery">
+                            </li>
+                            <li data-id="3">
+                                <img src="../assets/icons/restaurant-black_icon.svg" alt="Atendimento no salão">
+                            </li>
+                        </ul>
+                        <input type="hidden" class="services" name="selected-services">
+                    </section>
+                    <section id="margin-form">
+                        <div id="days">
+                            <div class="order">
+                                <span class="black-circle"></span>
+                                <h3 class="command">Selecione os dias:</h3>
+                            </div>
+                            <div id="calendar">
+                                <img src="../assets/images/calendar_pic.png" alt="Calendário">
+                            </div>
+                        </div>
+                        <div id="hours">
+                            <div class="order">
+                                <span class="black-circle"></span>
+                                <h3 class="command">Selecione o intervalo de horário:</h3>
+                            </div>
+                            <div id="hour">
+                                <p>De</p>
+                                <input type="time" name="initial-time">
+                                <p>até</p>
+                                <input type="time" name='end-time'>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="submit-orange-button">
+                        <button class="submission-btn" type="submit">CONFIRMAR</button>
+                    </div>
+                </form>
+            </main>
+            <footer class="only-logo">
+                <img src="../assets/images/logo-medium-whitebg.png" alt="Logo">
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
