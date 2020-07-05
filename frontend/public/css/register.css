@@ -1,0 +1,116 @@
+fieldset {
+    border: none;
+}
+
+.page main {
+    margin: 150px 200px 20px;
+}
+
+.page main .register-title{
+    text-align: center;
+}
+
+.page main .register-title h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.page main .register-title h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--gray-dark);
+}
+
+.page main .command {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/*register-general*/
+
+    main #form-general {
+        margin: 30px 110px 10px;
+    }
+
+    main #form-general #field-group {
+        margin-bottom: 40px;
+    }
+
+    main #form-general #field-group fieldset {
+        border: none;
+    }
+
+    main #form-general #field-group fieldset label {
+        display: block;
+        margin-top: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--gray-dark);
+    }
+
+    main #form-general #field-group fieldset input {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 8px;
+        background: var(--gray);
+        color: black;
+        font-family: "Montserrat", sans-serif;
+    }
+
+/*register-services*/
+
+main #form-services {
+    margin: 40px auto;
+}
+
+main #form-services #services-selection {
+    margin-bottom: 30px;
+}
+
+main #form-services #services-selection ul {
+    list-style: none;
+    margin: 30px 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+main #form-services #services-selection ul li {
+    background: var(--gray);
+    border: 5px solid var(--gray-dark);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+main #form-services #services-selection ul li.selected {
+    background: var(--orange);
+    border: 5px solid black;
+}
+
+main #form-services #services-selection ul li span {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+main #form-services #services-selection ul li img, span {
+    pointer-events: none;
+}

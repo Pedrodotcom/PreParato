@@ -2,8 +2,8 @@
 
 :root {
     --orange: #faad37;
-    --gray: #d6d6d6;
-    --gray-dark: #b5b5b5;
+    --gray: #e7e3e3;
+    --gray-dark: #807d7d;
     --black-blur: #202020;
     --white-ice: #f5f0f0;
     --shadow-default: 4px 4px 5px rgba(0, 0, 0, 0.75)
@@ -32,4 +32,35 @@
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+}
+
+.interface .page header.only-namelogo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+.interface .page footer.only-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 40px;
+}
+
+main .submit-orange-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .submit-orange-button .submission-btn {
+    background: var(--orange);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
 }
